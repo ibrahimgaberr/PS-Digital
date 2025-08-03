@@ -25,12 +25,12 @@ export default function Services1({
               }
             >
               <h3 className="cs-portfolio_img_title">{category}</h3>
-              <Div className="cs-portfolio_img_in cs-shine_hover_1 cs-radius_5">
+              <Div className="w-full h-[90vh] cs-portfolio_img_in cs-shine_hover_1 cs-radius_5">
                 <Image
                   fill
                   src={imageUrl}
                   alt="Portfolio"
-                  className="w-full h-[90vh] object-cover mb-15 rounded-tr-[40px] rounded-bl-[40px]"
+                  className="object-cover mb-15 rounded-tr-[40px] rounded-bl-[40px]"
                 />
               </Div>
             </Div>

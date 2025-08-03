@@ -82,21 +82,21 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="w-full relative"
+            className="w-full relative h-[70vh] mt-10"
           >
-            <Image
-              fill
-              src={img_1}
-              className="w-full mt-10 h-[70vh] rounded-tr-[40px] rounded-bl-[40px]"
-              alt="about-img"
-            />
+           <Image
+            fill
+            src={img_1}
+            className="object-cover rounded-tr-[40px] rounded-bl-[40px]"
+            alt="about-img"
+          />
 
-            <Image
-              fill
-              src={img_3}
-              alt="about-shape"
-              className="absolute hidden lg:-bottom-8 lg:-right-8 opacity-50"
-            />
+          <Image
+            fill
+            src={img_3}
+            alt="about-shape"
+            className="absolute hidden lg:-bottom-8 lg:-right-8 opacity-50 object-cover"
+          />
           </motion.div>
         </div>
       </section>
@@ -121,12 +121,12 @@ const About = () => {
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            className="w-full lg:w-1/2 relative"
+            className="w-full h-96 lg:w-1/2 relative"
           >
             <Image
               fill
               src={img_2}
-              className="rounded-tr-[40px] rounded-bl-[40px] w-full h-96 object-cover"
+              className="rounded-tr-[40px] rounded-bl-[40px]  object-cover"
               alt="about-img"
             />
           </motion.div>

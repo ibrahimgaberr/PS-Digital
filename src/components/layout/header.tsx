@@ -67,11 +67,10 @@ const Header = () => {
           Contact Us
         </Link>
       </div>
-      <div className="">
-        <Link className="cs-text_btn" href="">
+        {/* <Link className="cs-text_btn" href="">
           Let's talk
-        </Link>
-      </div>
+        </Link> */}
+
       <div className="hidden lg:flex lg:flex-1 lg:justify-end">
         <ToggleThemeMode />
       </div>
