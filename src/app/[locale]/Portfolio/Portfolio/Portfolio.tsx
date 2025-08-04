@@ -12,7 +12,7 @@ export default function PortfolioItem({ href, src, title, subtitle, variant }: {
       <>
         <Div className="cs-portfolio_hover" />
         <Div
-          className="cs-portfolio_bg cs-bg rounded-tr-[40px] rounded-bl-[40px]"
+          className="cs-portfolio_bg cs-bg rounded-tr-[40px] rounded-bl-[40px] bg-no-repeat bg-cover bg-center"
           style={{ backgroundImage: `url("${src}")` }}
         />
         <Div className="cs-portfolio_info">

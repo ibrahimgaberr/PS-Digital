@@ -80,18 +80,18 @@ const Portfolio = () => {
     <>
       <InnerBanner />
       <Div className="max-w-screen-2xl p-20">
-        <Div className="flex flex-wrap gap-10">
+        <Div className="flex flex-col lg:flex-row lg:flex-wrap gap-10">
           {portfolioData.map((item, index) => (
             <Div
-              className={`${
+              className={`w-full ${
                 index === 0 ||
                 index === 3 ||
                 index === 4 ||
                 index === 6 ||
                 index === 8 ||
                 index === 10
-                  ? "w-[55%] !pt-0"
-                  : "w-[40%] h-96 !pb-0 !pt-0"
+                  ? "lg:w-[55%] !pt-0"
+                  : "lg:w-[40%] lg:h-96 !pb-0 !pt-0"
               }`}
               key={index}
             >

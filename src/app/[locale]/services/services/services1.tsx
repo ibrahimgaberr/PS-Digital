@@ -17,15 +17,15 @@ export default function Services1({
     <Div className="cs-portfolio cs-style2 !mb-10">
       <Div className="cs-gradient_shape" />
       <Div className="container">
-        <Div className="flex items-center inverse-sec">
-          <Div className="w-1/2">
+        <Div className="flex flex-col md:flex-row justify-center items-center inverse-sec">
+          <Div className="w-full md:w-1/2">
             <Div
               className={
                 hovered ? "cs-portfolio_img active" : "cs-portfolio_img"
               }
             >
-              <h3 className="cs-portfolio_img_title">{category}</h3>
-              <Div className="w-full h-[90vh] cs-portfolio_img_in cs-shine_hover_1 cs-radius_5">
+              <h3 className="hidden md:block cs-portfolio_img_title">{category}</h3>
+              <Div className="w-full h-[50vh] md:h-[90vh] relative cs-portfolio_img_in cs-shine_hover_1 cs-radius_5">
                 <Image
                   fill
                   src={imageUrl}
@@ -35,7 +35,7 @@ export default function Services1({
               </Div>
             </Div>
           </Div>
-          <Div className="w-1/2 p-14">
+          <Div className="w-full md:w-1/2 p-0 md:p-14 mt-5">
             <Div className="cs-section_heading cs-style1">
               <h3 className="text-xl font-semibold tracking-wide text-[#fa9f1c]">
                 {subtitle}

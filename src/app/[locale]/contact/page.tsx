@@ -10,8 +10,8 @@ const Contact = () => {
     <>
       <InnerBanner />
       <Div className="container">
-        <Div className="flex">
-          <Div className="w-1/2">
+        <Div className="flex flex-col md:flex-row justify-between items-center gap-10 mt-10">
+          <Div className="w-full md:w-1/2">
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -27,7 +27,7 @@ const Contact = () => {
             </motion.div>
             <ContactInfoWidget withIcon />
           </Div>
-          <Div className="w-1/2 pt-6">
+          <Div className="w-full md:w-1/2 pt-6">
             <span className="text-xl font-semibold tracking-wide text-[#fa9f1c]">
               Fill the form to Contact Us
             </span>
@@ -126,12 +126,12 @@ const Contact = () => {
                     className="block w-full h-40 bg-transparent rounded-[40px] border-1 border-gray-500 ring-1 pl-4 py-3 text-white shadow-sm  ring-gray-500 placeholder:text-gray-400  sm:text-sm sm:leading-6"
                   />
                 </div>
-                <Link
-                  href="/"
-                  className="!py-[18px] !px-[60px] text-[20px] btn-action style-2 mt-10"
+                <button
+                type="submit"
+                className="!py-[18px] !px-[60px] text-[20px] btn-action style-2 mt-10"
                 >
                   Submit
-                </Link>
+                </button>
               </motion.div>
             </form>
           </Div>

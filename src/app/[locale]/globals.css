@@ -3690,11 +3690,6 @@ img {
   font-size: 50px;
 }
 
-.cs-portfolio:nth-child(odd) .inverse-sec .cs-portfolio_img_title {
-  left: initial;
-  right: calc((100vw - 1300px) / 2 / 2);
-}
-
 .cs-portfolio.cs-style2.cs-type1 .cs-portfolio_img_title {
   left: initial;
   right: calc((100vw - 1300px) / 2 / 2);
@@ -3712,8 +3707,15 @@ img {
 
 }
 
-.cs-portfolio:nth-child(odd) .inverse-sec {
-  flex-direction: row-reverse;
+@media screen and (min-width: 768px) {
+  .cs-portfolio:nth-child(odd) .inverse-sec .cs-portfolio_img_title {
+    left: initial;
+    right: calc((100vw - 1300px) / 2 / 2);
+  }
+
+  .cs-portfolio:nth-child(odd) .inverse-sec {
+    flex-direction: row-reverse;
+  }
 }
 
 .slick-center .cs-portfolio.cs-style1 {
@@ -3931,9 +3933,6 @@ img {
 }
 
 @media screen and (max-width: 1080px) {
-  .cs-portfolio.cs-style2 .cs-portfolio_img {
-    padding-left: 60px;
-  }
 
   .cs-portfolio.cs-style2 .cs-portfolio_img_title {
     margin-left: 0;
@@ -3961,7 +3960,7 @@ img {
   .cs-portfolio.cs-style2 .cs-portfolio_img,
   .cs-portfolio.cs-style2.cs-type1 .cs-portfolio_img {
     position: relative;
-    padding-left: 70px;
+    /* padding-left: 70px; */
     padding-right: 0;
   }
 
